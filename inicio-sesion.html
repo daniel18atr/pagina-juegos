@@ -4,18 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iniciar sesion</title>
+<style>
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+background:linear-gradient(135deg,aqua,white);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+overflow: hidden;
+}
+
+.contenedor-form{
+    background-color: red;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px pink;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    
+}
+</style>
 </head>
 <body>
+    <div class="contenedor-form">
     <h1>iniciar sesion</h1>
     <form method="post" action="index.js" enctype="multipart/form-data">
-    <label for="nombre_usuario">nombre de usuario</label><br>
-    <input type="text" name="nombre_usuario" id="nombre_usuario" required><br>
-    <label for="gmail">gmail</label><br>
-    <input type="email" name="gmail" id="gmail" required><br>
-    <label for="contraseña">contraseña</label><br>
-    <input type="password" name="contraseña" id="contraseña" required><br>
-    <input type="submit" value="iniciar" name="enviar" id="enviar">
-    <p>no tenes una cuenta? registrate aqui</p>
+        <label for="nombre_usuario">nombre de usuario</label><br>
+        <input type="text" name="nombre_usuario" id="nombre_usuario" required><br>
+        <label for="gmail">gmail</label><br>
+        <input type="email" name="gmail" id="gmail" required><br>
+        <label for="contraseña">contraseña</label><br>
+        <input type="password" name="contraseña" id="contraseña" required><br>
+        <input type="submit" value="iniciar" name="enviar" id="enviar">
     </form>
+    <p>no tenes una cuenta? <a href="Formulariodejuegos.html">registrate aqui</a></p>
+    </div>
 </body>
 </html>
