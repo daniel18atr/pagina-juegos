@@ -9,6 +9,7 @@ height: 100%;
 background: black ;
 }
 
+/*section*/
 section {
 display: grid;
 grid-template-columns: repeat(3,0fr);
@@ -19,7 +20,7 @@ padding: 0px 400px;
 section img{
     width: 200px;
     height: auto;
-    border-radius: 7px;
+    border-radius: 10%;
 }
 
 section p {
@@ -28,8 +29,9 @@ section p {
     text-align: center;
     color: red;
 }
+/*fin section*/
 
-
+/*barra lateral*/
 #barraLateral {
     position: fixed;
     width: 300px;
@@ -49,4 +51,73 @@ section p {
     width: 150px;
     height: 150px;
     border-radius: 100%;
+}
+/*fin barra lateral*/
+
+
+ /* Foto de usuario en la esquina superior derecha */
+.user-photo {
+position: absolute;
+top: 10px;
+right: 10px;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: 2px solid rgb(0, 0, 0); /* Borde rojo */
+display: none; /* Se oculta por defecto */
+}
+
+/* Contenedor principal */
+.container {
+position: fixed;
+
+
+display: flex;
+align-items: center;
+padding: 10px 68px;
+border: 3px solid #a00013; /* Borde rojo */
+background-color: black; /* Fondo blanco */
+}
+
+.search-box {
+display: flex;
+align-items: center;
+background-color: white; /* Fondo gris claro */
+padding: 5px 10px;
+border-radius: 5px;
+margin-left: 800px;
+}
+
+.search-box input {
+border: none;
+outline: none;
+font-size: 16px;
+color: black;
+}
+
+.search-box input::placeholder {
+color: black;
+}
+
+.search-box img {
+width: 20px;
+height: 20px;
+margin-right: 5px;
+}
+
+.button {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 80px;
+height: 40px;
+margin-left: 10px;
+border: 2px solid red; /* Borde rojo */
+border-radius: 50%;
+color: black; /* Texto rojo */
+font-size: 14px;
+text-decoration: none;
+text-align: center;
+cursor: pointer;
+background-color: white;
 }
